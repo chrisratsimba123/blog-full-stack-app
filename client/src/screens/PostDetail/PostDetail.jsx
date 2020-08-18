@@ -21,10 +21,22 @@ const PostDetail = (props) => {
     }
 
     return (
-        <Layout>
-            <>
-            </>
-        </Layout>
+      <Layout>
+      <div className="post-detail">
+          <img className="post-detail-image" src={post.imgURL} alt={post.name} />
+          <div className="detail">
+              <div className="title">{post.title}</div>
+              <div className="imgURL">{post.imgURL}</div>
+              <div className="content">{post.content}</div>
+              <div className="author">{post.author}</div>
+            
+              <div className="button-container">
+                  <button className="edit-button"><Link className="edit-link" to={`/posts/${post._id}/edit`}>Edit</Link></button>
+                  <button className="delete-button" onClick={() => deletePost(post._id)}>Delete</button>
+              </div>
+          </div>
+      </div>
+  </Layout>
     )
 }
 
