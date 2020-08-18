@@ -3,10 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const Post = (props) => {
-    const {id, title, imgURL, content, author } = props
+    const {_id, title, imgURL, content, author } = props
     return (
         <>
-            <Link to={`/posts/${id}`} className="post">
+            <Link to={`/posts/${_id}`} className="post">
                 <div className="post-title">{title}</div>
                 <img className="post-image" src={imgURL} alt="nature-scene"/>
                 <div className="post-content">{content}</div>
