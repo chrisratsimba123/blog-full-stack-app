@@ -17,8 +17,8 @@ const Posts = (props) => {
     )
 
     return (
-        <>
+        <div>
         {postsJSX}
-        </>
+        </div>
     )
 }
