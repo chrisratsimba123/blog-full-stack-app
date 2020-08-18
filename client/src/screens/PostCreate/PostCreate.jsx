@@ -34,28 +34,28 @@ const PostCreate = (props) => {
     <Layout>
       <form className="create-form" onSubmit={handleSubmit}>
         <input
-          className="input-name"
+          className="input-title"
           placeholder="Blog Title"
           value={post.title}
-          name="name"
+          name="title"
           required
           autoFocus
           onChange={handleChange}
         />
         <input
-          className="input-price"
+          className="input-author"
           placeholder="Author"
           value={post.author}
-          name="price"
+          name="author"
           required
           onChange={handleChange}
         />
         <textarea
-          className="textarea-description"
+          className="textarea-content"
           rows={10}
           placeholder="Content"
           value={post.content}
-          name="description"
+          name="content"
           required
           onChange={handleChange}
         />
