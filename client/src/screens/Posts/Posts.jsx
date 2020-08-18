@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getPosts } from '../../services/blogs'
 
-const Posts = (props) => {
+const Posts = () => {
     const [allPosts, updateAllPosts] = useState([])
 
     useEffect(() => {
@@ -12,13 +12,24 @@ const Posts = (props) => {
         fetchPosts()
     }, [])
 
-    const postsJSX = allPosts.map(() => 
-    // Call Post component
+    const postsJSX = allPosts.map((post, index) => 
+        <Post 
+            id={post.id} 
+            title={post.title} 
+            imgURL={post.imgURL} 
+            content={post.content} 
+            author={post.author} 
+            key={index}
+        />
     )
 
     return (
-        <div>
-        {postsJSX}
-        </div>
+        <Layout>
+            <div className="posts">
+                {postsJSX}
+            </div>
+        </Layout>
     )
 }
+
+export default Posts
