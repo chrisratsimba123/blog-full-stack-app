@@ -1,6 +1,6 @@
 import React from 'react';
 // import './Product.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Post = (props) => {
     const {_id, title, imgURL, content, author } = props
