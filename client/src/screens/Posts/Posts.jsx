@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import './Posts.css'
+
+import Post from "../../components/Post/Post"
+import Layout from "../../components/shared/Layout/Layout"
 import { getPosts } from '../../services/blogs'
 
-const Posts = (props) => {
+const Posts = () => {
     const [allPosts, updateAllPosts] = useState([])
 
     useEffect(() => {
@@ -12,13 +16,24 @@ const Posts = (props) => {
         fetchPosts()
     }, [])
 
-    const postsJSX = allPosts.map(() => 
-    // Call Post component
+    const postsJSX = allPosts.map((post, index) => 
+        <Post 
+            id={post._id} 
+            title={post.title} 
+            imgURL={post.imgURL} 
+            content={post.content} 
+            author={post.author} 
+            key={index}
+        />
     )
 
     return (
-        <>
-        {postsJSX}
-        </>
+        <Layout>
+            <div className="posts">
+                {postsJSX}
+            </div>
+        </Layout>
     )
 }
+
+export default Posts
