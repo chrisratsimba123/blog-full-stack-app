@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './Posts.css'
 
 import Post from "../../components/Post/Post"
 import Layout from "../../components/shared/Layout/Layout"
