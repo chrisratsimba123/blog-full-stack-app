@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: #FCF951FF;
+  background-color: #669DB3FF;
+}
+.chris {
+color: #A13941FF;
+}
+
+.dayna {
+  color: #9FC131FF;
+}
+
+.don {
+ color: #E3C9CEFF;
+}
+.rami {
+  color: #008C76FF;
+}
