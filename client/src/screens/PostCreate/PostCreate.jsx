@@ -17,8 +17,10 @@ const PostCreate = (props) => {
   return (
     <Layout>
       <form>
-          
+
       </form>
     </Layout>
   );
 };
+
+export default PostCreate
