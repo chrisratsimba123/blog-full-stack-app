@@ -32,7 +32,45 @@ const PostCreate = (props) => {
   }
   return (
     <Layout>
-      <form></form>
+      <form className="create-form" onSubmit={handleSubmit}>
+        <input
+          className="input-name"
+          placeholder="Blog Title"
+          value={post.title}
+          name="name"
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+        <input
+          className="input-price"
+          placeholder="Author"
+          value={post.author}
+          name="price"
+          required
+          onChange={handleChange}
+        />
+        <textarea
+          className="textarea-description"
+          rows={10}
+          placeholder="Content"
+          value={post.content}
+          name="description"
+          required
+          onChange={handleChange}
+        />
+        <input
+          className="input-image-link"
+          placeholder="Image Link"
+          value={post.imgURL}
+          name="imgURL"
+          required
+          onChange={handleChange}
+        />
+        <button type="submit" className="submit-button">
+          Submit
+        </button>
+      </form>
     </Layout>
   );
 };
