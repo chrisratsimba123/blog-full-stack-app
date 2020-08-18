@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'
+
+import Post from "../../components/Post/Post"
+import Layout from "../../components/shared/Layout/Layout"
 import { getPosts } from '../../services/blogs'
 
 const Posts = () => {
