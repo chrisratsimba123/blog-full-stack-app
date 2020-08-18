@@ -14,7 +14,7 @@ const Posts = () => {
 
     const postsJSX = allPosts.map((post, index) => 
         <Post 
-            id={post.id} 
+            id={post._id} 
             title={post.title} 
             imgURL={post.imgURL} 
             content={post.content} 
