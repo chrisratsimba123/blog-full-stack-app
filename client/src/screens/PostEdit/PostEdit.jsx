@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './PostEdit.css'
 import { useParams, Redirect } from "react-router-dom";
-import Layout from '../../components/shared/Layout/Layout'
+import Layout from '../../components/Shared/Layout/Layout'
 import { getPost, updatePost } from '../../services/blogs'
 
 const PostEdit = (props) => {
@@ -20,7 +20,7 @@ const PostEdit = (props) => {
           const post = await getPost(id)
           setPost(post)
       }
-      fetchPost
+      fetchPost()
   }, [id])
 
   const handleChange = (event) => {

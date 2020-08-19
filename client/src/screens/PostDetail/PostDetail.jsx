@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getPost, deletePost } from '../../services/blogs'
 import { useParams, Link } from 'react-router-dom'
+import Layout from '../../components/Shared/Layout/Layout'
 
 const PostDetail = (props) => {
     const [post, updatePost] = useState(null)
