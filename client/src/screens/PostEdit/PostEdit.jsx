@@ -34,7 +34,7 @@ const PostEdit = (props) => {
 const handleSubmit = async (event) => {
     event.preventDefault()
     let { id } = props.match.params
-        const updated = await updatePost(id, product)
+        const updated = await updatePost(id, post)
         updateUpdated(updated)
 }
 
