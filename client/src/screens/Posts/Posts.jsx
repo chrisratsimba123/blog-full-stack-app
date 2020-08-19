@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Posts.css'
 
 import Post from "../../components/Post/Post"
-import Layout from "../../components/Shared/Layout/Layout"
+import Layout from "../../components/Group/Layout/Layout"
 import { getPosts } from '../../services/blogs'
 
 const Posts = () => {
