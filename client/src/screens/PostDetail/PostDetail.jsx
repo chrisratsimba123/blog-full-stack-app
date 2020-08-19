@@ -3,7 +3,7 @@ import { getPost, deletePost } from '../../services/blogs'
 import { useParams, Link } from 'react-router-dom'
 import Layout from '../../components/Shared/Layout/Layout'
 
-const PostDetail = (props) => {
+const PostDetail = () => {
     const [post, updatePost] = useState(null)
     const [isLoaded, setLoaded] = useState(false)
     const { id } = useParams()
@@ -27,7 +27,6 @@ const PostDetail = (props) => {
           <img className="post-detail-image" src={post.imgURL} alt={post.name} />
           <div className="detail">
               <div className="title">{post.title}</div>
-              <div className="imgURL">{post.imgURL}</div>
               <div className="content">{post.content}</div>
               <div className="author">{post.author}</div>
             

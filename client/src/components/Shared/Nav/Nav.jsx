@@ -7,10 +7,10 @@ const Nav = () => {
     return (
         <nav>
             <div className="nav">
-                <NavLink className="logo" to="/">Blog App</NavLink>
+                <NavLink className="logo" to="/">Bugs 'n Dirt</NavLink>
                 <div className="links">
-                    <NavLink className="link" to="/products">Posts</NavLink>
-                    <NavLink className="link" to="/add-product">Add Blog Posts</NavLink>
+                    <NavLink className="link" to="/posts">Posts</NavLink>
+                    <NavLink className="link" to="/add-posts">Add Posts</NavLink>
                 </div>
             </div>
         </nav>
