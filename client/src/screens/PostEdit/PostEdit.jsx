@@ -25,7 +25,7 @@ const PostEdit = (props) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target
-    updatePost({
+    setPost({
             ...post,
             [name]: value
     })

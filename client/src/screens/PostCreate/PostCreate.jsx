@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './PostCreate.css'
 import { Redirect } from "react-router-dom";
 import Layout from "../../components/Shared/Layout/Layout"
 import { createPost } from "../../services/blogs";
@@ -28,7 +29,7 @@ const PostCreate = (props) => {
   };
 
   if (isCreated) {
-    return <Redirect to={`/posts`} />;
+    return <Redirect to={`/`} />;
   }
   return (
     <Layout>
