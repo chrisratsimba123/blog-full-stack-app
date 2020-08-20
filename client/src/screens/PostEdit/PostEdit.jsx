@@ -81,7 +81,7 @@ const handleSubmit = async (event) => {
                         cols={78}
                         placeholder='Content'
                         value={post.content}
-                        name='description'
+                        name='content'
                         required
                         onChange={handleChange}
                     />
