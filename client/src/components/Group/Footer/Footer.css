@@ -1,22 +1,23 @@
 footer {
+  width: 100vw !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  color: #FCF951FF;
-  background-color: #669DB3FF;
+  padding: 50px 200px;
+  color: #fcf951ff;
+  background-color: #669db3ff;
 }
 .chris {
-color: #A13941FF;
+  color: #a13941ff;
 }
 
 .dayna {
-  color: #9FC131FF;
+  color: #9fc131ff;
 }
 
 .don {
- color: #E3C9CEFF;
+  color: #e3c9ceff;
 }
 .rami {
-  color: #008C76FF;
+  color: #008c76ff;
 }
