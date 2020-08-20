@@ -5,8 +5,9 @@
 }
 
 .layout-children {
-  flex: 2;
-  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
 }
 
 @media (max-width: 500px) {

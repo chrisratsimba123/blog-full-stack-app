@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  margin: 0 200px;
   justify-content: space-evenly;
 }
 
@@ -49,6 +50,7 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
   height: 40px;
   margin-top: 40px;
+  margin-bottom: 100px;
   background-color: black;
   color: white;
   border: none;
@@ -64,6 +66,5 @@ textarea {
   input,
   textarea {
     font-size: 28px;
-
-}
+  }
 }
